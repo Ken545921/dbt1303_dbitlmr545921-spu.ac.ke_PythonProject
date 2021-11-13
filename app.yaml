@@ -1,0 +1,20 @@
+runtime : python38
+instance_class: F1
+
+env_variables:
+  MYSQL_USER: 'root'
+  MYSQL_PASSWORD: '<placeholder>'
+  MYSQL_DB: 'todo'
+  MYSQL_HOST: <ip_address>
+
+handlers :
+  url: /img
+  static_dir: static/img
+
+  url: /script
+  static_dir: static/script
+    
+  url: styles
+  static_dir: static/styles
+
+
